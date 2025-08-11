@@ -1,0 +1,23 @@
+name: dbt_test_monthly
+run-name: dbt_test_monthly
+
+on:
+  workflow_dispatch:
+    branches:
+      - "main"
+    
+concurrency:
+  group: ${{ github.workflow }}
+
+jobs:
+  called_workflow_template:
+    uses: FlipsideCrypto/fsc-evm/.github/workflows/dbt_run_template.yml@pre-release/v4-beta
+    with:
+      warehouse: DBT_EMERGENCY
+      command_name: Build Full Testing Views
+      command: |
+        dbt run -m "fsc_evm,tag:full_test"
+      command_name_2: Run Full Tests
+      command_2: |
+        dbt test -m "fsc_evm,tag:full_test"
+    secrets: inherit
