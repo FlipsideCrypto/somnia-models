@@ -1,9 +1,9 @@
 {% docs __overview__ %}
 
-# Welcome to the Flipside Crypto <evm_chain> Models Documentation!
+# Welcome to the Flipside Crypto somnia Models Documentation!
 
 ## **What does this documentation cover?**
-The documentation included here details the design of the <evm_chain> tables and views available via [Flipside Crypto.](https://flipsidecrypto.xyz/) For more information on how these models are built, please see [the github repository.](https://github.com/FlipsideCrypto/<evm_chain>-models)
+The documentation included here details the design of the somnia tables and views available via [Flipside Crypto.](https://flipsidecrypto.xyz/) For more information on how these models are built, please see [the github repository.](https://github.com/FlipsideCrypto/somnia-models)
 
 ## **How do I use these docs?**
 The easiest way to navigate this documentation is to use the Quick Links below. These links will take you to the documentation for each table, which contains a description, a list of the columns, and other helpful information.
@@ -16,7 +16,7 @@ There is more information on how to use dbt docs in the last section of this doc
 
 **Click on the links below to jump to the documentation for each schema.**
 
-### Core Tables (<evm_chain>.core)
+### Core Tables (somnia.core)
 
 **Dimension Tables:**
 - [dim_labels](https://flipsidecrypto.github.io/mantle-models/#!/model/model.fsc_evm.core__dim_labels)
@@ -34,13 +34,13 @@ There is more information on how to use dbt docs in the last section of this doc
 - [ez_native_transfers](https://flipsidecrypto.github.io/mantle-models/#!/model/model.fsc_evm.core__ez_native_transfers)
 - [ez_token_transfers](https://flipsidecrypto.github.io/mantle-models/#!/model/model.fsc_evm.core__ez_token_transfers)
   
-### Price Tables (<evm_chain>.price)
+### Price Tables (somnia.price)
 - [dim_asset_metadata](https://flipsidecrypto.github.io/mantle-models/#!/model/model.fsc_evm.price__dim_asset_metadata)
 - [fact_prices_ohlc_hourly](https://flipsidecrypto.github.io/mantle-models/#!/model/model.fsc_evm.price__fact_prices_ohlc_hourly)
 - [ez_asset_metadata](https://flipsidecrypto.github.io/mantle-models/#!/model/model.fsc_evm.price__ez_asset_metadata)
 - [ez_prices_hourly](https://flipsidecrypto.github.io/mantle-models/#!/model/model.fsc_evm.price__ez_prices_hourly)
 
-### NFT Tables (<evm_chain>.nft)
+### NFT Tables (somnia.nft)
 - [ez_nft_transfers](https://flipsidecrypto.github.io/mantle-models/#!/model/model.fsc_evm.nft__ez_nft_transfers)
 
 ## **Helpful User-Defined Functions (UDFs)**
@@ -85,7 +85,7 @@ Note that you can also right-click on models to interactively filter and explore
 - [Flipside](https://flipsidecrypto.xyz/)
 - [Data Studio](https://flipsidecrypto.xyz/studio)
 - [Tutorials](https://docs.flipsidecrypto.com/our-data/tutorials)
-- [Github](https://github.com/FlipsideCrypto/<evm_chain>-models)
+- [Github](https://github.com/FlipsideCrypto/somnia-models)
 - [What is dbt?](https://docs.getdbt.com/docs/introduction)
 
 {% enddocs %}
