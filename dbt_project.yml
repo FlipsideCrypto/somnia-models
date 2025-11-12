@@ -96,6 +96,12 @@ models:
       +enabled: false
       stats:
         +enabled: true
+      defi:
+        +enabled: false
+        bridge:
+          +enabled: true
+        dex:
+          +enabled: true
     balances_package:
       +enabled: false
       erc20:
